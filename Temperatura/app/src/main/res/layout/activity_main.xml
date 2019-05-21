@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="30dp">
+
+   <TextView android:text="Grados"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:id="@+id/lblGrados"
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:textSize="30dp"
+       android:background="#1EB09C"
+       android:textColor="#FFFF"
+
+       />
+    <EditText
+        android:id="@+id/txtGrados"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/lblGrados"
+        android:layout_margin="20dp"
+        android:typeface="serif"
+        android:background="#ECF4F4"
+        android:textSize="30dp"/>
+    <Button
+        android:id="@+id/btnFarenheit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Centigrados"
+        android:layout_below="@id/txtGrados"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        />
+
+ <Button
+     android:id="@+id/btnCentigrados"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/txtGrados"
+     android:layout_marginStart="10dp"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="10dp"
+     android:layout_marginEnd="10dp"
+     android:layout_marginBottom="10dp"
+     android:layout_toRightOf="@id/btnFarenheit"
+     android:text="Fahrenheit"
+     android:textSize="18dp" />
+
+    <TextView android:text="Resultado"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/lblResultado"
+        android:layout_margin="20dp"
+        android:textSize="30dp"
+        android:layout_below="@id/btnCentigrados"
+        android:background="#1EB09C"
+        android:textColor="#FFFF"
+
+        />
+    <EditText
+        android:id="@+id/txtResultado"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/lblResultado"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:typeface="serif"
+        android:background="#ECF4F4"
+        android:textSize="30dp"/>
+
+
+</RelativeLayout>
